@@ -1,0 +1,19 @@
+{
+  "name": "userManagement",
+  "version": "0.0.1",
+  "location": "https://github.com/...",
+  "author": "",
+  "description": "",
+  "domain": "signalvehicle.com",
+  "stages": {
+    "dev": [
+      {
+        "region": "us-east-1",
+        "iamRoleArnLambda": "arn:aws:iam::237169730438:role/dev-userManagement-r-IamRoleLambda-1K285Y2AOKPT9",
+        "iamRoleArnApiGateway": "arn:aws:iam::237169730438:role/dev-userManagement-r-IamRoleApiGateway-1SCMJNOMGCE2J",
+        "jawsBucket": "jaws.dev.useast1.signalvehicle.com",
+        "restApiId": "e0e3ghvc5k"
+      }
+    ]
+  }
+}
