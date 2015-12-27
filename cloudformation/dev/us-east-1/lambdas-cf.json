@@ -8,6 +8,23 @@
     }
   },
   "Resources": {
+    "lUsersShow": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Description": "",
+        "Handler": "aws_modules/users/show/handler.handler",
+        "MemorySize": 1024,
+        "Runtime": "nodejs",
+        "Timeout": 6,
+        "Code": {
+          "S3Bucket": "jaws.dev.useast1.signalvehicle.com",
+          "S3Key": "JAWS/userManagement/dev/lambdas/lUsersShow@1451147014442.zip"
+        },
+        "Role": {
+          "Ref": "aaLambdaRoleArn"
+        }
+      }
+    },
     "lUsersCreate": {
       "Type": "AWS::Lambda::Function",
       "Properties": {
@@ -18,7 +35,7 @@
         "Timeout": 6,
         "Code": {
           "S3Bucket": "jaws.dev.useast1.signalvehicle.com",
-          "S3Key": "JAWS/userManagement/dev/lambdas/lUsersCreate@1451142627116.zip"
+          "S3Key": "JAWS/userManagement/dev/lambdas/lUsersCreate@1451146307847.zip"
         },
         "Role": {
           "Ref": "aaLambdaRoleArn"
@@ -35,24 +52,7 @@
         "Timeout": 6,
         "Code": {
           "S3Bucket": "jaws.dev.useast1.signalvehicle.com",
-          "S3Key": "JAWS/userManagement/dev/lambdas/lUsersGet@1451078923514.zip"
-        },
-        "Role": {
-          "Ref": "aaLambdaRoleArn"
-        }
-      }
-    },
-    "lUsersShow": {
-      "Type": "AWS::Lambda::Function",
-      "Properties": {
-        "Description": "",
-        "Handler": "aws_modules/users/show/handler.handler",
-        "MemorySize": 1024,
-        "Runtime": "nodejs",
-        "Timeout": 6,
-        "Code": {
-          "S3Bucket": "jaws.dev.useast1.signalvehicle.com",
-          "S3Key": "JAWS/userManagement/dev/lambdas/lUsersShow@1451078926042.zip"
+          "S3Key": "JAWS/userManagement/dev/lambdas/lUsersGet@1451146309757.zip"
         },
         "Role": {
           "Ref": "aaLambdaRoleArn"
