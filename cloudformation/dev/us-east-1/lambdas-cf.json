@@ -8,6 +8,23 @@
     }
   },
   "Resources": {
+    "lUsersUpdate": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Description": "",
+        "Handler": "aws_modules/users/update/handler.handler",
+        "MemorySize": 1024,
+        "Runtime": "nodejs",
+        "Timeout": 6,
+        "Code": {
+          "S3Bucket": "jaws.dev.useast1.signalvehicle.com",
+          "S3Key": "JAWS/userManagement/dev/lambdas/lUsersUpdate@1451567493640.zip"
+        },
+        "Role": {
+          "Ref": "aaLambdaRoleArn"
+        }
+      }
+    },
     "lUsersCreate": {
       "Type": "AWS::Lambda::Function",
       "Properties": {

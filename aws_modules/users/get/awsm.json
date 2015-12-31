@@ -4,7 +4,7 @@
       "TABLE_NAME",
       "JAWS_STAGE"
     ],
-    "deploy": true,
+    "deploy": false,
     "package": {
       "optimize": {
         "builder": "browserify",
